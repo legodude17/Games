@@ -1,0 +1,60 @@
+{
+    "Home": {
+        "intro": "You are at home..",
+        "init": [
+            {
+                "name": "door-open",
+                "value": false
+            }
+        ],
+        "directions": {
+            "leave": {
+                "params": [
+                    {
+                        "name": "door-open",
+                        "value": true
+                    }
+                ],
+                "fail": "The door is not open",
+                "effect": {
+                    "to": "Front Yard",
+                    "outro": "You leave for front yard"
+                }
+            }
+        },
+        "commands": {
+            "open door": {
+                "params": [
+                    {
+                        "name": "door-open",
+                        "value": false
+                    }
+                ],
+                "fail": "The door is already open",
+                "effect": [
+                    {
+                        "name": "door-open",
+                        "value": true
+                    }
+                ],
+                "text": "You open the door"
+            },
+            "close door": {
+                "params": [
+                    {
+                        "name": "door-open",
+                        "value": true
+                    }
+                ],
+                "fail": "The door is already closed",
+                "effect": [
+                    {
+                        "name": "door-open",
+                        "value": false
+                    }
+                ],
+                "text": "You close the door"
+            }
+        }
+    }
+}
