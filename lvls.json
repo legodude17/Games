@@ -1,0 +1,45 @@
+[
+    {
+        "name": "Level 1",
+        "icon": "1.svg",
+        "sound": "none",
+        "backdrop": "backdrop.jpg",
+        "blocks": [
+            {
+                "x": 8,
+                "y": 0,
+                "type": "D"
+            },
+            {
+                "x": 9,
+                "y": 1,
+                "type": "R"
+            },
+            {
+                "x": 7,
+                "y": 0,
+                "type": "R"
+            }
+        ],
+        "blocks_string": "10,1,D;10,0,R;11,2,R;12,5,D;12,4,R;"
+    },
+    {
+        "name": "Jump test",
+        "icon": "2.svg",
+        "sound": "none",
+        "backdrop": "backdrop.jpg",
+        "blocks": [
+            {
+                "x": 8,
+                "y": 0,
+                "type": "J"
+            },
+            {
+                "x": 60,
+                "y": 0,
+                "type": "H"
+            }
+        ],
+        "blocks_string": "9,0,D;10,0,D"
+    }
+]
